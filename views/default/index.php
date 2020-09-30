@@ -13,7 +13,7 @@ use yii\widgets\Pjax;
 /* @var $searchModel ravesoft\page\models\search\PageSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('yee/page', 'Pages');
+$this->title = Yii::t('rave/page', 'Pages');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="page-index">
@@ -21,7 +21,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="row">
         <div class="col-sm-12">
             <h3 class="lte-hide-title page-title"><?= Html::encode($this->title) ?></h3>
-            <?= Html::a(Yii::t('yee', 'Add New'), ['/page/default/create'], ['class' => 'btn btn-sm btn-primary']) ?>
+            <?= Html::a(Yii::t('rave', 'Add New'), ['/page/default/create'], ['class' => 'btn btn-sm btn-primary']) ?>
         </div>
     </div>
 
@@ -34,9 +34,9 @@ $this->params['breadcrumbs'][] = $this->title;
                         'model' => Page::className(),
                         'searchModel' => $searchModel,
                         'labels' => [
-                            'all' => Yii::t('yee', 'All'),
-                            'active' => Yii::t('yee', 'Published'),
-                            'inactive' => Yii::t('yee', 'Pending'),
+                            'all' => Yii::t('rave', 'All'),
+                            'active' => Yii::t('rave', 'Published'),
+                            'inactive' => Yii::t('rave', 'Pending'),
                         ],
                     ]) ?>
                 </div>
@@ -56,8 +56,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 'bulkActionOptions' => [
                     'gridId' => 'page-grid',
                     'actions' => [
-                        Url::to(['bulk-activate']) => Yii::t('yee', 'Publish'),
-                        Url::to(['bulk-deactivate']) => Yii::t('yee', 'Unpublish'),
+                        Url::to(['bulk-activate']) => Yii::t('rave', 'Publish'),
+                        Url::to(['bulk-deactivate']) => Yii::t('rave', 'Unpublish'),
                         Url::to(['bulk-delete']) => Yii::t('yii', 'Delete'),
                     ]
                 ],

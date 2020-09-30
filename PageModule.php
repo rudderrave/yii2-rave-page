@@ -1,6 +1,6 @@
 <?php
 /**
- * @link http://www.yee-soft.com/
+ * @link http://www.rave-soft.com/
  * @copyright Copyright (c) 2015 Taras Makitra
  * @license http://www.apache.org/licenses/LICENSE-2.0
  */
@@ -10,7 +10,7 @@ namespace ravesoft\page;
 use Yii;
 
 /**
- * Page Module For Yee CMS
+ * Page Module For Rave CMS
  *
  * @author Taras Makitra <makitrataras@gmail.com>
  */
@@ -47,13 +47,13 @@ class PageModule extends \yii\base\Module
     {
         if (empty($this->viewList)) {
             $this->viewList = [
-                'page' => Yii::t('yee', 'Page view')
+                'page' => Yii::t('rave', 'Page view')
             ];
         }
 
         if (empty($this->layoutList)) {
             $this->layoutList = [
-                'main' => Yii::t('yee', 'Main layout')
+                'main' => Yii::t('rave', 'Main layout')
             ];
         }
 
